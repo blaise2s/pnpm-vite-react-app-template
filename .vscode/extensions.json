@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint",
+    "tombonnike.vscode-status-bar-format-toggle",
+    "github.copilot",
+    "github.copilot-chat",
+    "eamodio.gitlens",
+    "oderwat.indent-rainbow",
+    "pkief.material-icon-theme",
+    "esbenp.prettier-vscode"
+  ]
+}
