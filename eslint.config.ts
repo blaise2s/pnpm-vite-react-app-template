@@ -17,7 +17,7 @@ export default tseslint.config(
     ignores: [
       'dist',
       '.prettierrc.cjs',
-      'eslint.config.js',
+      'eslint.config.ts',
       'lint-staged.config.mjs',
     ],
   },
@@ -37,7 +37,7 @@ export default tseslint.config(
       globals: globals.browser,
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: './',
       },
     },
     plugins: {
