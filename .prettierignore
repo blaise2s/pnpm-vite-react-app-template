@@ -1,5 +1,6 @@
 .husky
 .vscode
+coverage
 dist
 public
 *-lock.*

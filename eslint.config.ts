@@ -15,6 +15,9 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
   {
     ignores: [
+      '.husky',
+      '.vscode',
+      'coverage',
       'dist',
       '.prettierrc.cjs',
       'eslint.config.ts',
