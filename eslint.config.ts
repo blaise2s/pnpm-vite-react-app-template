@@ -41,7 +41,7 @@ export default tseslint.config(
       globals: globals.browser,
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: './',
+        tsconfigRootDir: __dirname,
       },
     },
     plugins: {
