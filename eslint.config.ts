@@ -22,6 +22,7 @@ export default tseslint.config(
       '.prettierrc.cjs',
       'eslint.config.ts',
       'lint-staged.config.mjs',
+      'vite.config.ts',
     ],
   },
   {

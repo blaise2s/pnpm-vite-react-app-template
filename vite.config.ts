@@ -1,7 +1,5 @@
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
-// TODO: Remove when issue is resolved, couldn't find a good bug for tracking progress
-// eslint-disable-next-line import/no-unresolved
 import { coverageConfigDefaults } from 'vitest/config';
 
 // https://vite.dev/config/
@@ -28,8 +26,9 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
+          'emotion-vendor': ['@emotion/react', '@emotion/styled'],
+          'mui-vendor': ['@mui/material'],
           lodash: ['lodash'],
-          // 'mui-vendor': ['@mui/material', '@mui/icons-material'],
           'react-vendor': ['react', 'react-dom'],
         },
       },
