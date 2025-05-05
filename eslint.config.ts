@@ -11,6 +11,8 @@ import reactWebApi from 'eslint-plugin-react-web-api';
 import reactX from 'eslint-plugin-react-x';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+import pluginRouter from '@tanstack/eslint-plugin-router';
+import pluginQuery from '@tanstack/eslint-plugin-query';
 
 export default tseslint.config(
   {
@@ -23,6 +25,7 @@ export default tseslint.config(
       'eslint.config.ts',
       'lint-staged.config.mjs',
       'vite.config.ts',
+      'routeTree.gen.ts',
     ],
   },
   {
@@ -30,6 +33,8 @@ export default tseslint.config(
       js.configs.recommended,
       ...tseslint.configs.strictTypeChecked,
       ...tseslint.configs.stylisticTypeChecked,
+      ...pluginRouter.configs['flat/recommended'],
+      ...pluginQuery.configs['flat/recommended'],
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
       eslintPluginPrettierRecommended,

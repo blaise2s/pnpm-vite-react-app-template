@@ -4,3 +4,4 @@ coverage
 dist
 public
 *-lock.*
+routeTree.gen.ts
